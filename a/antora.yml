@@ -1,0 +1,6 @@
+name: package-a
+version: ~
+title: Package A
+start_page: index.adoc
+nav:
+  - modules/ROOT/nav.adoc

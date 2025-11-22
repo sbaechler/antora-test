@@ -1,0 +1,17 @@
+{
+  "name": "antora-test",
+  "version": "1.0.0",
+  "description": "Minimal Antora project to reproduce the nav issue.",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "antora antora-playbook.yml",
+    "serve": "npm run build && npx serve ./build/site"
+  },
+  "author": "Simon Bächler",
+  "type": "commonjs",
+  "main": "index.js",
+  "devDependencies": {
+    "antora": "^3.1.14"
+  }
+}
