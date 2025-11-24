@@ -1,0 +1,11 @@
+image:
+  name: antora/antora
+publish:
+  stage: deploy
+  pages: true
+  interruptible: true
+  script:
+    - antora --fetch --redirect-facility=gitlab --to-dir=public --url $CI_PAGES_URL antora-playbook.yml
+  artifacts:
+    paths:
+      - public
