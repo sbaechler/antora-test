@@ -6,7 +6,7 @@ publish:
   interruptible: true
   script:
     - echo $CI_PAGES_URL
-    - antora --fetch --redirect-facility=gitlab --to-dir=public --url $CI_PAGES_URL antora-playbook.yml
+    - antora --fetch --redirect-facility=static --to-dir=public --url $CI_PAGES_URL antora-playbook.yml
   artifacts:
     paths:
       - public
